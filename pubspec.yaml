@@ -1,0 +1,65 @@
+name: base_app
+description: A new Flutter project.
+publish_to: none
+
+environment:
+  sdk: '>=2.19.4 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter    
+  dio: ^4.0.4
+  get: ^4.6.5
+
+  micro_core:
+    #path: ../micro_core
+    git:
+      url: https://github.com/LucasCDutra/MicroCore.git
+      ref: v1.0.0
+
+  micro_app_home:
+    #path: ../micro_app_home
+    git:
+      url: https://github.com/LucasCDutra/MicroAppHome.git
+      ref: v1.0.0 
+
+
+  micro_commons_design_system:
+    #path: ../micro_commons_design_system
+    git:
+      url: https://github.com/LucasCDutra/MicroCommonsDesignSystem.git
+      ref: v1.0.0
+    
+  micro_commons_micro_apps:
+    #path: ../micro_commons_micro_apps
+    git:
+      url: https://github.com/LucasCDutra/MicroCommonsApps.git
+      ref: v1.0.0
+
+  cupertino_icons: ^1.0.2
+
+  flutter_localizations:
+    sdk: flutter
+  
+flutter_native_splash:
+  color: "#FFFFFF"
+  image: assets/logofundo.png
+
+  
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.13
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/micro-app.png
+    - assets/base-app.png
+    - assets/micro-core.png
+    - assets/micro-commons.png
